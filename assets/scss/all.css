@@ -185,8 +185,47 @@ a {
 
 .header {
   max-width: 1920px;
-  background: #69f0ae;
-  font-size: 64px;
+}
+
+.background {
+  background-image: url("/assets/image/bg-layout.jpg");
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.ptb-16 {
+  padding: 16px 0;
+}
+
+.py-12-24 {
+  padding: 12px 24px;
+}
+
+.py-55 {
+  padding: 5.5px 0;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.mr-12 {
+  margin-right: 12px;
 }
 
 .footer {

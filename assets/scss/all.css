@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,6 +133,40 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* 設定主題顏色 */
+:root {
+  --primary-450: #fe4b1a;
+  --primary-700: #0b478e;
+  --secondary-150: #e4d9cd;
+  --secondary-450: #af8d6a;
+  --secondary-600: #856647;
+  --natural-0: #ffffff;
+  --natural-50: #f0f3f5;
+  --natural-100: #e0e5eb;
+  --natural-150: #d1d9e1;
+  --natural-250: #b2bfcc;
+  --natural-400: #8599ad;
+  --natural-500: #667f99;
+  --natural-650: #47596b;
+  --natural-850: #002e4e;
+  --alpha-white40: #ffffff66;
+  --alpha-black50: #00000080;
+}
+
+/* 
+在 reset CSS 或全域樣式中為 * 設定 box-sizing: border-box，這裡額外針對偽元素補上，
+避免它們意外採用預設的 content-box 而導致排版錯誤。 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1296px;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .header {

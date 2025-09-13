@@ -136,6 +136,8 @@ table {
 :root {
   --primary-450: #fe4b1a;
   --primary-700: #0b478e;
+  --primary-black: #002e4e;
+  --primary-white: #ffffff;
   --secondary-150: #e4d9cd;
   --secondary-450: #af8d6a;
   --secondary-600: #856647;
@@ -161,10 +163,22 @@ table {
   box-sizing: border-box;
 }
 
-// 通用樣式
+// 以下設定通用樣式
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: var(--primary-black);
+}
+
 .container {
   max-width: 1296px;
-  font-family: "Noto Sans TC", sans-serif;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--primary-black);
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
 }
 
 // 輸入其他頁面的SCSS檔

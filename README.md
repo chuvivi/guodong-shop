@@ -16,31 +16,7 @@
 
 ## 資料夾結構
 
-- ├── .gitignore # Git 忽略文件，用來指定不需上傳至 GitHub 的檔案或目錄
-- ├── README.md # 項目說明文件，包含專案說明、指令列表及部署流程等資訊
-- ├── vite.config.js # Vite 配置檔案，設定 base 路徑、插件（如 EJS、live-reload）、伺服器選項及 build 設定
-- ├── package.json # 項目設定文件，定義專案名稱、版本、腳本（如 dev、build、deploy 等指令）
-- ├── package-lock.json # NPM 依賴鎖定文件，確保依賴版本一致，包含所有套件的詳細版本資訊
-- ├── main.js # 主 JavaScript 檔案，用來匯入樣式（如 SCSS）或執行 JavaScript 程式碼
-- ├── assets/ # 靜態資源資料夾，用來放置圖片、圖標及 SCSS 樣式
-- │ ├── icon/ # 網頁圖標
-- │ ├── image/ # 網頁圖片
-- │ │ ├── Logo/ # 網站 Logo
-- │ └── scss/ # SCSS 樣式主資料夾
-- │ ├── layout/ # SCSS 樣式子資料夾，用來存放 layout 相關樣式
-- │ │ ├── footer.scss # SCSS 檔案，用來定義頁面底部樣式（頁尾樣式寫這裡）
-- │ │ └── header.scss # SCSS 檔案，用來定義頁面頂部樣式（頁首樣式寫這裡）
-- │ ├── pages/ # SCSS 樣式子資料夾，用來存放 pages 相關樣式
-- │ │ └── index.scss # SCSS 檔案，用來定義首頁樣式
-- │ ├── all.css # 編譯後的 CSS 檔案
-- │ └── all.css.map # CSS 映射檔案
-- ├── layout/ # EJS 模板資料夾，用來放置 EJS 模板檔案
-- │ ├── footer.ejs # EJS 模板檔案，用來定義頁面底部內容（頁尾結構寫這裡）
-- │ └── header.ejs # EJS 模板檔案，用來定義頁面頂部內容（頁首結構寫這裡）
-- └── pages/ # 頁面資料夾，用來放置 HTML 或 EJS 頁面檔案
-- ├── index.html # 首頁 HTML 檔案，作為預設開啟頁面
-- ├── MemberCenter.html # 會員中心頁面 HTML 檔案
-- └── ProductList.html # 產品列表頁面 HTML 檔案
+[資料夾結構＆命名文件](https://docs.google.com/document/d/17TerLUyCz2QNza9kIrwp24FD0ITsNw3p8xukSfNI6R0/edit?tab=t.0)
 
 ### 注意事項
 

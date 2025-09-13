@@ -1,4 +1,4 @@
-// 頁首樣式設定
+// （已註冊）頁首樣式設定
 .header {
   max-width: 1920px;
 }
@@ -49,15 +49,16 @@
   margin-right: 12px;
 }
 
+// 以下為headerNoMember（未註冊／非會員）頁首專用樣式
 .nav-item {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 120px; 
-  height: 43px; 
-  padding: 12px 24px; 
-  background: var(--secondary-450); 
-  color: var(--primary-white); 
+  width: 120px;
+  height: 43px;
+  padding: 12px 24px;
+  background: var(--secondary-450);
+  color: var(--primary-white);
   font-size: 16px;
   border-radius: 16px;
   text-decoration: none;
@@ -65,10 +66,9 @@
 
 .header-right {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .header-right a {
   margin-left: 20px;
 }
-

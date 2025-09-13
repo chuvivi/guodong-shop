@@ -228,6 +228,29 @@ a {
   margin-right: 12px;
 }
 
+.nav-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 43px;
+  padding: 12px 24px;
+  background: var(--secondary-450);
+  color: var(--primary-white);
+  font-size: 16px;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right a {
+  margin-left: 20px;
+}
+
 .footer {
   background: #69F0AE;
   font-size: 64px;

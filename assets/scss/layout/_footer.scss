@@ -1,4 +1,51 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+// 頁尾樣式設定
+.footer {
+  max-width: 1920px;
+  background-color: var(--secondary-450);
+  color: var(--natural-0);
+  font-size: 14px;
+  text-align: right;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.ptb-48 {
+  padding: 48px 0;
+}
+
+.iconColor {
+  fill: var(--natural-0);
+}
+
+.pl-108 {
+  padding: 0 0 0 108px;
+}
+
+.li-a {
+  width: 56px;
+  height: 56px;
+  padding: 11.33px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
 }

@@ -1,0 +1,20 @@
+  .draggable {
+    position: fixed;
+    left: 50px;
+    top: 80px;
+    width: 320px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    z-index: 1500;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans CJK TC";
+  }
+  .draggable .title {
+    padding: 10px 12px;
+    cursor: grab;
+    user-select: none;
+    background: linear-gradient(90deg,#f7f7f7,#fff);
+    border-bottom: 1px solid #eee;
+  }
+  .draggable .content { padding: 12px; }

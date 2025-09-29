@@ -1,0 +1,48 @@
+  <div class="draggable" id="drag">
+    <div class="title" id="dragHandle">拖曳我 — 標題列</div>
+    <div class="content">
+      <p>可以用滑鼠或手指拖曳這個視窗。</p>
+      <button onclick="document.getElementById('drag').style.display='none'">關閉</button>
+    </div>
+  </div>
+
+<script>
+(function(){
+  const el = document.getElementById('drag');
+  const handle = document.getElementById('dragHandle');
+  let startX=0, startY=0, startLeft=0, startTop=0, dragging=false;
+
+  function onDown(e){
+    dragging = true;
+    // 支援 touch 和 mouse
+    const p = e.touches ? e.touches[0] : e;
+    startX = p.clientX;
+    startY = p.clientY;
+    const rect = el.getBoundingClientRect();
+    startLeft = rect.left;
+    startTop = rect.top;
+    handle.style.cursor = 'grabbing';
+    e.preventDefault();
+  }
+  function onMove(e){
+    if (!dragging) return;
+    const p = e.touches ? e.touches[0] : e;
+    const dx = p.clientX - startX;
+    const dy = p.clientY - startY;
+    el.style.left = (startLeft + dx) + 'px';
+    el.style.top  = (startTop + dy) + 'px';
+  }
+  function onUp(){
+    dragging = false;
+    handle.style.cursor = 'grab';
+  }
+
+  handle.addEventListener('mousedown', onDown);
+  document.addEventListener('mousemove', onMove);
+  document.addEventListener('mouseup', onUp);
+
+  handle.addEventListener('touchstart', onDown, {passive:false});
+  document.addEventListener('touchmove', onMove, {passive:false});
+  document.addEventListener('touchend', onUp);
+})();
+</script>

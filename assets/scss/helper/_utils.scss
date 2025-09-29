@@ -1,0 +1,42 @@
+/* 標籤基本樣式 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 70px; /* 依照 sticky nav 高度調整 */
+}
+// 全域樣式
+body {
+  @include global-body-style;
+}
+// 通用樣式
+.container {
+  margin: 0 auto;
+  max-width: 1296px;
+}
+
+.d-flex {
+  display: flex;
+}
+.en-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.font-lg {
+  font-size: 18px;
+}
+.me-12 {
+  margin-right: 12px;
+}
+.mx-12 {
+  padding: 12px;
+}
+
+

@@ -1,3 +1,6 @@
+// 變數、通用樣式
+@import 'helper/variables';
+
 // Vite環境可以省略`node_modules`
 @import "bootstrap/scss/bootstrap";
 
@@ -8,6 +11,21 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+// 第三方套件
+@import '../../node_modules/bootstrap/scss/functions';
+@import './utils/variables';
+@import '../../node_modules/bootstrap';
+@import 'helper/utils';
+
+// base
+@import 'base/base';
+
+// components
+@import 'components/button';
+@import 'components/breadcrumb';
+
+@import './pages/product-detail';
+
 // 以下為CSS重置
 html,
 body,

@@ -1,0 +1,54 @@
+.mainCarousel.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .mainCarousel.img {
+    max-width: 520px;
+    max-height: 520px; 
+  }
+}
+@media (min-width: 992px) {
+  .small-img {
+    height: 520px;
+  }
+}
+
+.thumb {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.main-img {
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+.stock-label {
+  background-color: $Secondary-150;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+.deliver-detail p {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.type {
+  width: 100px;
+}
+.box1 {
+  height: 120px;
+  width: 120px;
+}
+.anchoring :hover {
+    border-bottom: 2px $danger solid ;
+}
+.good-detail p {
+    margin-bottom: 6px;
+}
+

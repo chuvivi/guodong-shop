@@ -1,17 +1,51 @@
-.discount p {
-  text-align: center;
-  padding: 8px 0;
-  border-top: 1px solid #8599ad;
-  border-bottom: 1px solid #8599ad;
-  background-image: url("/assets/image/bg-layout.jpg");
-}
+.discount {
+  p {
+    text-align: center;
+    padding: 8px 0;
+    border-top: 1px solid #8599ad;
+    border-bottom: 1px solid #8599ad;
+    background-image: url("/assets/image/bg-layout.jpg");
+  }
 
-.discount span {
-  color: var(--primary-450);
-  padding-left: 4px;
+  span {
+    color: var(--primary-450);
+    padding-left: 4px;
+  }
 }
 
 main {
   max-width: 1920px;
-  background-color: var(--alpha-white40);
+  background-image: url("/assets/image/bg-layout.jpg");
+  // 這裡有背景顏色要處理
+}
+
+//麵包屑導覽
+//元件
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px;
+  color: var(--natural-500);
+}
+
+.breadcrumb-item {
+  display: flex;
+  font-weight: 400;
+  color: var(--natural-500);
+}
+
+.breadcrumb-link {
+  font-weight: 400;
+  color: var(--secondary-450);
+}
+
+// h1標題
+.productListTitle {
+  text-align: center;
+}
+
+// 各式間距設定
+
+.mb-24 {
+  margin-bottom: 24px;
 }

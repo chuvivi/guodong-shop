@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 // 折扣區塊
 .discount {
   p {
@@ -68,13 +72,13 @@ main > * {
   font-size: 16px;
   line-height: 1.5;
   color: var(--natural-500);
-}
 
-.breadcrumb-link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--secondary-450);
+  .breadcrumb-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--secondary-450);
+  }
 }
 
 // 頁面標題區塊
@@ -91,6 +95,35 @@ main > * {
   width: 1296px;
   height: 272px;
   border-radius: 24px;
+}
+
+//篩選條件＆下拉選單按鈕設定
+//QQ不會調bootstrap的變數，只好寫一個蓋過去
+.btn {
+  color: var(--primary-black);
+  background-color: #ffffff;
+  border: none;
+  width: 125px;
+  height: 40px;
+  padding: 10.5px 12px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+}
+
+.dropdown-menu {
+  text-align: center;
+}
+
+// 下拉清單間距問題待處理
+.dropdown-item {
+  padding: 12px;
+}
+
+.dropdown-item:hover {
+  background-color: #e4d9cd;
 }
 
 // 各式間距設定
@@ -117,6 +150,8 @@ main > * {
 .pr-12 {
   padding-right: 12px;
 }
+
+// paddind上下、左右
 
 //文字設定
 .h1 {

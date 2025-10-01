@@ -23,8 +23,10 @@
         <!-- 麵包屑導覽 -->
         <div class="mb-24">
           <ol class="display-flex">
-            <!-- 這邊有個homeIcon晚點處理 -->
+            <!-- 這邊有個homeIcon晚點處理，先用bootstrap的代替 -->
+            
             <li class="breadcrumb-item">
+             <i class="bi bi-house-door mr-4 breadcrumb-link "></i>
               <a href="./index.html" class="breadcrumb-link">首頁</a>
             </li>
             <li class="breadcrumb-item">商品一覽</li>
@@ -44,10 +46,11 @@
         />
         <!-- 篩選條件＆下拉選單 -->
         <!-- 下拉選單的間距還未設定 -->
-        <div class="display-flex align-center mb-24">
-         
-          <p class="body-md pr-12">篩選條件：</p>
-          <!--下拉選單1-->
+        <div class="display-flex align-center justify-between mb-24">
+         <!-- 篩選條件：左區塊 -->
+          <div class="display-flex align-center ">
+          <p class="body-md ptb-8 pr-12">篩選條件：</p>
+          <!--下拉選單1：商品類別-->
           <div class="dropdown btn-group pr-12">
             <button
               type="button"
@@ -83,7 +86,7 @@
               <li><a class="dropdown-item" href="#">美容</a></li>
             </ul>
           </div>
-          <!-- 下拉選單2 -->
+          <!-- 下拉選單2：預算選禮 -->
           <div class="dropdown btn-group pr-12">
             <button
               type="button"
@@ -103,7 +106,7 @@
             </ul>
           </div>
 
-          <!-- 下拉選單3 -->
+          <!-- 下拉選單3：送禮類型-->
           <div class="dropdown btn-group pr-12">
             <button
               type="button"
@@ -122,7 +125,31 @@
               <li><a class="dropdown-item" href="#">居家禮物</a></li>
             </ul>
           </div>
-       
+       </div>
+       <!-- 篩選條件：右區塊 -->
+       <div class="display-flex align-center ">
+        <!-- 下拉選單4：熱銷商品 -->
+        <div class="dropdown btn-group pr-12 ">
+            <button
+              type="button"
+              class="btn dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              熱銷商品
+              <!-- 這邊有個Icon搞不定，之後處理 -->
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">價格低到高</a></li>
+              <li><a class="dropdown-item" href="#">價格高到低</a></li>
+              <li><a class="dropdown-item" href="#">最新上架</a></li>
+              <li><a class="dropdown-item" href="#">熱銷商品</a></li>
+            </ul>
+          </div>
+          <!-- 這個search icon暫時先用bootstrap的 -->
+          <button type="button" class="btn btn-4" ><i class="bi bi-search mr-4"></i>搜尋商品</button>
+          
+       </div>
       </div>
     </main>
     <%- include('./layout/footer'); -%>

@@ -11,6 +11,10 @@
   justify-content: space-between;
 }
 
+.text-center {
+  text-align: center;
+}
+
 // 折扣區塊
 .discount {
   p {
@@ -105,8 +109,11 @@ main > * {
   border: none;
   width: 125px;
   height: 40px;
-  padding: 10.5px 12px;
+  padding: 8px 12px;
   text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .btn:hover {
@@ -126,10 +133,18 @@ main > * {
   background-color: #e4d9cd;
 }
 
+// 下拉選單4：熱銷商品
+.btn-4 {
+  color: var(--natural-500);
+  background-color: #ffffff;
+}
+
+// search-box
+
 // 各式間距設定
-//margin-bottom
-.mb-24 {
-  margin-bottom: 24px;
+//margin-right
+.mr-4 {
+  margin-right: 4px;
 }
 
 //margin-bottom
@@ -151,7 +166,11 @@ main > * {
   padding-right: 12px;
 }
 
-// paddind上下、左右
+// paddind上下
+.ptb-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 
 //文字設定
 .h1 {

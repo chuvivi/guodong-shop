@@ -1,3 +1,13 @@
+// 通用樣式
+.display-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+// 折扣區塊
 .discount {
   p {
     text-align: center;
@@ -16,6 +26,7 @@
 // 主區塊設定&背景設定
 main {
   max-width: 1920px;
+
   background-image: url("/assets/image/bg-layout.jpg");
   position: relative; /* 確保偽元素相對於 main 定位 */
   background-position: center;
@@ -69,12 +80,7 @@ main > * {
 // 頁面標題區塊
 .productListTitle {
   text-align: center;
-  h1 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.2;
-    color: var(--primary-black);
-  }
+
   p {
     font-size: 18px;
   }
@@ -105,4 +111,22 @@ main > * {
 //padding-top
 .pt-48 {
   padding-top: 48px;
+}
+
+//padding-right
+.pr-12 {
+  padding-right: 12px;
+}
+
+//文字設定
+.h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--primary-black);
+}
+
+.body-md {
+  font-size: 16px;
+  line-height: 1.5;
 }

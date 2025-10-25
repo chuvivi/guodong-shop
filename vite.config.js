@@ -25,7 +25,7 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法:
   // base: '/Repository 的名稱/'
-  base: "/https://github.com/chuvivi/guodong-shop.git/",
+  base: "/guodong-shop/",
   plugins: [
     liveReload([
       "./layout/**/*.ejs",
